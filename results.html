@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Suggestions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Your Career Suggestions</h1>
+        <div id="result"></div>
+        <a href="index.html"><button>Retake Quiz</button></a>
+    </div>
+
+    <script>
+        // Retrieve stored suggestions from localStorage
+        const careerSuggestions = JSON.parse(localStorage.getItem("careerSuggestions"));
+
+        // Display results
+        if (careerSuggestions && careerSuggestions.length > 0) {
+            document.getElementById("result").innerHTML = `
+                <h2>Top 3 Career Suggestions Based on Your Choices:</h2>
+                <ol>
+                    <li>${careerSuggestions[0]}</li>
+                    <li>${careerSuggestions[1]}</li>
+                    <li>${careerSuggestions[2]}</li>
+                </ol>
+            `;
+        } else {
+            document.getElementById("result").innerHTML = "<p>No results found. Please take the quiz first.</p>";
+        }
+    </script>
+
+</body>
+</html>
