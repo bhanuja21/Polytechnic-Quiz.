@@ -1,0 +1,58 @@
+/* Set the background image */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url('images/background.png') no-repeat center center fixed;
+    background-size: cover;
+    color: black;
+    padding: 20px;
+}
+
+/* Style the quiz container */
+.container {
+    background: rgba(255, 255, 255, 0.9); /* Light background for better readability */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+/* Style the heading */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Style the questions */
+.question {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Style radio buttons */
+label {
+    display: block;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Style the submit button */
+button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+}
+
+button:hover {
+    background: #218838;
+}
